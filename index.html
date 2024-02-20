@@ -3,53 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/scripts.js"></script>
     <title>Stefan Grobler | HTML Portfolio</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="top">
         <div class="navbar__container">
             <div class="primary__logo__container">
+                <a href="#top">
                 <img src="./assets/images/sfg_300_logo.jpg" width="60px" alt="primary logo">
+                </a>
             </div>
             <nav class="primary__navigation">
                 <ul class="primary__navigation__list">
-                    <li><a class="primary__nav-items" href="#about.html">About</a></li>
-                    <li><a class="primary__nav-items" href="#projects.html">Projects</a></li>
-                    <li><a class="primary__nav-items" href="#contact.html">Contact</a></li>
+                    <li><a class="primary__nav-items" href="#education">Education</a></li>
+                    <li><a class="primary__nav-items" href="#experience">Experience</a></li>
+                    <li><a class="primary__nav-items" href="#skills">Skills</a></li>
+                    <li><a class="primary__nav-items" href="./public/hobbies.html">Hobbies</a></li>
+                    <li><a class="primary__nav-items" href="./public/hobbies.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <div class="hero__container">
+    <section class="hero__container">
         <div class="hero__content">
             <h1 class="hero__title">
                 Stefan Grobler
             </h1>
-            <h3>
+            <h3 class="hero__subtitle">
                 Frontend Web Developer
             </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, sint.</p>
+            <p class="hero__tagline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, sint.</p>
         </div>
-    </div>
+    </section>
     <div class="container__main">
-        <div class="education__container">
+
+        <!-- Education -->
+        <div class="education__container" id="education">
             <div class="education__content">
-                <h2 class="education__title">Education</h2>
+                <h1 class="education__heading">Education</h1>
                     <table>
                         <thead>
                             <tr>
                                 <th scope="col">Institution</th>
                                 <th scope="col">Qualification</th>
-                                <th scope="col">Graduation Year</th>
+                                <th scope="col">Date</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                            <th scope="row">Zeerust Hoërskool</th>
-                                <td>Matric</td>
-                                <td>1998</td>
+                                <th scope="row">Udemy</th>
+                                <td>The Complete 2024 Web Development (Dr Angela Yu)</td>
+                                <td>2024 - present</td>
                             </tr>
                             <tr>
+                                <th scope="row">Scrimba</th>
+                                <td>Frontend Career Path</td>
+                                <td>2021 - 2022</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Shaw Academy</th>
+                                <td>
+                                    <ul>
+                                        <li>Advance Web Development Diploma</li>
+                                        <li>Web Development Diploma</li>
+                                        <li>Photoshop Diploma</li>
+                                    </ul>
+                                </td>
+                                <td>2021</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Udemy</th>
+                                <td>PHP for Beginners (Edwin Diaz)</td>
+                                <td>2020</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Udemy</th>
+                                <td>The modern Javascript Bootcamp (Andrew Mead)</td>
+                                <td>2020</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Udemy</th>
+                                <td>The Complete 2020 Web Development (Dr Angela Yu)</td>
+                                <td>2020</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Open University (RMIT)</th>
+                                <td>Web Programming Course </td>
+                                <td>2019</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Tshwane University Technology</th>
+                                <td>National Diploma </td>
+                                <td>2006 - 2008</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">PhotoWise</th>
+                                <td>One-year course in photography</td>
+                                <td>2005</td>
+                            </tr>
                             <th scope="row">Zeerust Hoërskool</th>
                                 <td>Matric</td>
                                 <td>1998</td>
@@ -58,6 +111,272 @@
                     </table>
             </div>
         </div>
+
+        <!-- Experience -->
+        <section class="experiece__container" id="experience">
+            <div class="experiece__content">
+                <h1 class="experiece__title">Experience</h1>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Employers</th>
+                                <th scope="col">Job Title</th>
+                                <th scope="col">Responsibilities</th>
+                                <th scope="col">Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <th scope="row">Paisano Photography</th>
+                                <td>Owner</td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            Event photography
+                                        </li>
+                                        <li>
+                                            Wedding photography
+                                        </li>
+                                        <li>
+                                            Studio photography
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>2013 - until present</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">Potchefstroom Academy</th>
+                                <td>Photograher</td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            Event photography
+                                        </li>
+                                        <li>
+                                            Wedding photography
+                                        </li>
+                                        <li>
+                                            Studio photography
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>Jan 2012 - Dec 2012</td>
+                             </tr>
+
+                            <tr>
+                                <th scope="row">Ultra Photography</th>
+                                <td>Freelance Photography</td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            Event photography
+                                        </li>
+                                        <li>
+                                            Studio photography
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>May 2011 - Dec 2018</td>
+                             </tr>
+                            <tr>
+                                <th scope="row">Carnival Cruiselines</th>
+                                <td>Ships Photographer</td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            Photographing guests
+                                        </li>
+                                        <li>
+                                            Studio photography
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>Jan 2010 – Apr 2011</td>
+                             </tr>
+                            <tr>
+                                <th scope="row">Spectrum Photography</th>
+                                <td>Ships Photographer</td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            Freelance Photographer
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>Jun 2006 – Dec 2009</td>
+                             </tr>
+                            <tr>
+                                <th scope="row">Infidels</th>
+                                <td>Photographers Assistant</td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            Freelance Photographer
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>Aug 2007 – Dec 2009</td>
+                             </tr>
+                            <tr>
+                                <th scope="row">Jaco Smit Photography</th>
+                                <td>Photographers Assistant</td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            Freelance Photographer
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>Jun 2007 – Oct 2008</td>
+                             </tr>
+                            <tr>
+                                <th scope="row">Perfect Image</th>
+                                <td>Event Photographer</td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            Freelance Photographer
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>Mar 2006 – Dec 2009</td>
+                             </tr>
+                            <tr>
+                                <th scope="row">Lancet Laboratories</th>
+                                <td>CCTV Operator</td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            Watch the monitor
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>Mar 2005 – Dec 2005</td>
+                             </tr>
+                            <tr>
+                                <th scope="row">Working Holiday (UK)</th>
+                                <td>Kitchen Work</td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            Kitchen Porter
+                                        </li>
+                                        <li>
+                                            Commis Chef
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>Febr 2003 – Dec 2005</td>
+                             </tr>
+                            <tr>
+                                <th scope="row">SA Consultants Consortium</th>
+                                <td>Network Administrator</td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            Network and client support
+                                        </li>
+                                        <li>
+                                            PC repairs
+                                        </li>
+                                        <li>
+                                            Network maintenance
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>Oct 2000 – Jan 2003</td>
+                             </tr>
+                            <tr>
+                                <th scope="row">Wimpy Centurion</th>
+                                <td>Waiter</td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            Waiting tables
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>Jun 2000 – Sept 2000</td>
+                             </tr>
+                            <tr>
+                                <th scope="row">Wimpy Riverside Mall</th>
+                                <td>Waiter</td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            Waiting tables
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>Aug 1999 – Apr 2000</td>
+                             </tr>
+                            <tr>
+                                <th scope="row">Sheriff Magistrate Court</th>
+                                <td>Deputy Sheriff</td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            Delivering and execution of legal documents
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>Apr 99 – Oct 1999</td>
+                             </tr>
+                        </tbody>
+                    </table>
+            </div>
+        </section>
+
+        <!-- Skills -->
+
+        <section class="skills__container" id="skills">
+            <h1 class="skills__heading">Skills</h1>
+            <div class="skills__content">
+                <div class="skills__card">
+                    <ion-icon name="logo-html5"></ion-icon>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skills__card">
+                    <ion-icon name="logo-css3"></ion-icon>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skills__card">
+                    <ion-icon name="logo-javascript"></ion-icon>
+                    <h3>JavaScript</h3>
+                </div>
+            </div>
+        </section>
+
     </div>
+    <!-- Footer -->
+    <footer>
+        <div class="footer__container">
+            <div class="footer__logo_container">
+                <a href="./index.html">
+                <img src="./assets/images/sfg_300_logo.jpg" width="60px" alt="footer logo">
+                </a>
+            </div>
+            <div class="footer__navigation_container">
+                <nav class="footer__navigation">
+                    <ul class="footer__navigation__list">
+                        <li><a class="primary__nav-items" href="#education">Education</a></li>
+                        <li><a class="primary__nav-items" href="#experience">Experience</a></li>
+                        <li><a class="primary__nav-items" href="#skills">Skills</a></li>
+                        <li><a class="primary__nav-items" href="./public/hobbies.html">Hobbies</a></li>
+                        <li><a class="primary__nav-items" href="./public/hobbies.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__social_container">
+                <ul class="footer__social">
+                    <li><a href="http://facebook.com" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="http://facebook.com" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-github"></ion-icon></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
