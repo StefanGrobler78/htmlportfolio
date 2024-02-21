@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
+:root{
+    --primary-color: #f5f5f5;
+    --secondary-color: #000000;
+    --tertiary-color: #900000;
+
+    --ff-primary: 'Karla', sans-serif;
+}
+body{
+    font-family: var(--ff-primary);
+    background-color: var(--primary-color);
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+}
+img{
+    width: 100%;
+    display: block;
+}
+table{
+    width: 100%;
+}
+thead{
+    background-color: lightgray;
+}
+th {
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: left;
+    vertical-align: top;
+}
+td {
+    padding: 1rem;
+    text-align: left;
+    vertical-align: top;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+.header {
+    background-color: var(--secondary-color);
+}
+
+/* Navigation Top */
+.navbar__container{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 0.5rem;
+}
+.container__main{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-inline: 1rem;
+}
+.primary__navigation__list{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+.primary__navigation__list :last-child {
+    margin-right: 1rem;
+}
+.primary__nav-items{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.2rem;
+}
+
+/* LOGO */
+.primary__logo__container{
+    margin-left: 1rem;
+}
+.primary__logo__container > a > img {
+    width: 3rem;
+}
+.footer__logo_container > a > img {
+    width: 3rem;
+}
+
+
+/* Section */
+section{
+    min-height: 100vh;
+    margin-bottom: 2rem;
+}
+.section__heading{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+/* Hero Section */
+
+.hero__container{
+    min-height: calc(100vh - 4rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding-inline: 1rem;
+    text-align: center;
+}
+.hero__content{
+    max-width: 1100px;
+    padding-inline: 1rem;
+}
+.hero__title {
+    font-size: 6rem;
+    margin: 0;
+    line-height: 4.5rem;
+    
+}
+.hero__subtitle {
+    font-size: 4rem;
+    margin: 0;
+    line-height: 3rem;
+    margin-bottom: 4rem;
+}
+.hero__tagline{
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Education */
+.education__content,
+.experiece__content{
+    overflow-x: auto;
+}
+.education__content ul,
+.experiece__content ul{
+    overflow-x: auto;
+    padding-left: 1rem;
+    margin: 0;
+}
+.table__row:hover{
+    background-color: lightgray;
+}
+
+
+/* Skills Section */
+.skills__content{
+    min-height: calc(100vh - 3rem);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    place-items: center;
+    align-content: center;
+}
+.skills__card{
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+.skills__card_icon{
+    font-size: 4rem;
+    color: var(--secondary-color);
+}
+.skills__card_heading{
+    margin: 0;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--secondary-color);
+}
+.footer__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-block: 2rem;
+}
+.footer__logo_container{
+    margin-left: 1rem;
+}
+.footer__navigation__list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.footer__nav-items{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.footer__socials_list{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin-right: 1rem;
+}
+.footer__icon{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 576px) {
+    .footer__container{
+        place-items: center;
+        gap: 2rem;
+    }
+    .footer__navigation__list{
+        padding: 0;
+    }
+    .footer__logo_container,
+    .footer__socials_list{
+        margin: 0;
+        padding: 0%;
+    }
+}
