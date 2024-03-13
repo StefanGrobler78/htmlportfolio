@@ -61,6 +61,7 @@ h1,h2,h3,h4,h5,h6{
     background-color: var(--secondary-color);
     position: fixed;
     width: 100%;
+    z-index: 100;
 }
 
 /* Navigation Top */
@@ -196,6 +197,7 @@ section{
     display: grid;
     place-items: center;
     align-content: center;
+    gap: 1rem;
 }
 .skills__card_icon{
     font-size: 4rem;
@@ -204,9 +206,38 @@ section{
 }
 .skills__card_svg{
     width: 4rem;
+    filter: grayscale(100%);
+    z-index: --9;
 }
 .skills__card_heading{
     margin: 0;
+}
+
+
+/* Contact */
+.contact__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 5rem;
+    flex-wrap: wrap;
+}
+.contact__card{
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+.contact__whatsapp_svg{
+    max-width: 50px;
+}
+.contact__mail_svg{
+    max-width: 50px;
+}
+.contact__text{
+    color: var(--secondary-color);
 }
 
 /* Footer */
@@ -261,7 +292,7 @@ footer {
         height: 0;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: flex-start;
         overflow: hidden;
         transition: width 500ms, height 500ms;
@@ -285,20 +316,30 @@ footer {
     }
     .primary__navigation__list.open-menu {
         width: 100%;
-        min-height: 30vh;
+        min-height: 100vh;
         background-color: var(--secondary-color);
         padding-block: 2rem;
       }
     /* Hero */
+    .hero__content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
     .hero__title{
-        font-size: 6.5rem;
-        line-height: 5rem;
+        font-size: clamp(2.8rem, 3vw,  3.2rem);
+    }
+    .hero__subtitle{
+        font-size: clamp(1rem, 3vw,  1.2rem);;
+        margin-top: 0%;
+    }
+    .hero__tagline{
+        font-size: 1rem;
+        text-align: left;
     }
     .hero__cta{
         justify-content: center;
-    }
-    .hero__subtitle{
-        font-size: 1rem;
     }
 
     .cta__btn{
